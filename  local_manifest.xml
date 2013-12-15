@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!--
+TAKING OVER PLATFORM_MANIFESTrep
+-->
+  <remote  name="logmd"
+           fetch="https://github.com/"
+           />
+           
+  <remove-project path="platform_manifest" name="SlimRoms/platform_manifest" remote="github" revision="jb" />
+
+<!-- New Additions for slim -->
+  <remove-project path="vendor/slim" name="SlimRoms/vendor_slim" remote="github" revision="jb" />
+
+
+<!--
+LOGMD section
+-->
+
+<project path="vendor/slim" name="logmd/slim-vendor_slim" remote="github" revision="jb" />
+
+<project path="device/moto/wingray" name="logmd/device_moto_wingray" remote="github" revision="jb" />
+
+</manifest>
